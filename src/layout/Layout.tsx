@@ -47,7 +47,7 @@ export default function Layout() {
         )}
 
         {/* Main Content */}
-        <div className={`${isHome ? "w-full" : "flex-grow ml-64"}`}>
+        <div className={`${isHome ? "max-w-7xl" : "flex-grow ml-64"}`}>
           {/* Outlet for nested routes */}
           <Outlet />
         </div>
