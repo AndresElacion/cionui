@@ -1,6 +1,11 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 
 export default function Layout() {
+  const location = useLocation();
+
+  // Determine whether to show the sidebar
+  const isHome = location.pathname === "/";
+
   return (
     <div>
       {/* Main Nav */}
@@ -22,25 +27,27 @@ export default function Layout() {
       </div>
 
       {/* Sidebar and Content */}
-      <div className="flex pt-16">
+      <div className={`flex pt-16 ${isHome ? "justify-center" : ""}`}>
         {/* Sidebar */}
-        <div className="fixed top-16 left-0 h-[calc(100vh-4rem)] w-64 bg-gray-800 text-white flex flex-col">
-          <nav className="flex-1 mt-4">
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  to="/components"
-                  className="flex items-center px-4 py-2 text-sm hover:bg-gray-700 rounded-md transition"
-                >
-                  Buttons
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        {!isHome && (
+          <div className="fixed top-16 left-0 h-[calc(100vh-4rem)] w-64 bg-gray-800 text-white flex flex-col">
+            <nav className="flex-1 mt-4">
+              <ul className="space-y-2">
+                <li>
+                  <Link
+                    to="/components"
+                    className="flex items-center px-4 py-2 text-sm hover:bg-gray-700 rounded-md transition"
+                  >
+                    Buttons
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        )}
 
         {/* Main Content */}
-        <div className="flex-grow ml-64">
+        <div className={`${isHome ? "w-full" : "flex-grow ml-64"}`}>
           {/* Outlet for nested routes */}
           <Outlet />
         </div>
