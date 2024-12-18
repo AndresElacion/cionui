@@ -1,5 +1,6 @@
 import { useOutletContext } from "react-router-dom";
 import CardDesign1 from "../components/card/CardDesign1";
+import CardDesign2 from "../components/card/CardDesign2";
 
 interface OutletContext {
   sidebarOpen: boolean;
@@ -25,6 +26,9 @@ export default function Cards() {
 
       <div className="mb-12 px-4">
         <CardDesign1 />
+      </div>
+      <div className="mb-12 px-4">
+        <CardDesign2 />
       </div>
     </div>
   );
