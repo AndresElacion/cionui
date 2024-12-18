@@ -1,10 +1,14 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 export default function Layout() {
   const location = useLocation();
 
   // Determine whether to show the sidebar
   const isHome = location.pathname === "/";
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
   return (
     <div>
@@ -12,7 +16,7 @@ export default function Layout() {
       <div className="fixed top-0 left-0 w-full bg-white shadow-md z-10">
         <div className="flex container max-w-7xl mx-auto items-center justify-between p-4">
           <h1 className="text-lg font-bold">cionui</h1>
-          <nav className="space-x-3">
+          <nav className="space-x-3 hidden lg:flex">
             <Link to="/" className="hover:text-blue-600">
               Home
             </Link>
@@ -23,6 +27,15 @@ export default function Layout() {
               Contact
             </Link>
           </nav>
+
+          {/* Toggle Button for Mobile */}
+          <button
+            onClick={toggleSidebar}
+            className="lg:hidden p-2 rounded-md border border-gray-300 hover:bg-gray-100 focus:outline-none"
+          >
+            <span className="sr-only">Toggle Sidebar</span>
+            {sidebarOpen ? "Close" : "Menu"}
+          </button>
         </div>
       </div>
 
@@ -30,7 +43,11 @@ export default function Layout() {
       <div className={`flex pt-16 ${isHome ? "justify-center" : ""}`}>
         {/* Sidebar */}
         {!isHome && (
-          <div className="fixed top-16 left-0 h-[calc(100vh-4rem)] w-64 bg-gray-800 text-white flex flex-col">
+          <div
+            className={`fixed top-16 left-0 h-[calc(100vh-4rem)] w-64 bg-gray-800 text-white flex flex-col transform ${
+              sidebarOpen ? "translate-x-0" : "-translate-x-64"
+            } transition-transform lg:translate-x-0`}
+          >
             <nav className="flex-1 mt-4">
               <ul className="space-y-2">
                 <li>
@@ -47,9 +64,13 @@ export default function Layout() {
         )}
 
         {/* Main Content */}
-        <div className={`${isHome ? "max-w-7xl" : "flex-grow ml-64"}`}>
+        <div
+          className={`flex-grow ${
+            isHome ? "max-w-7xl" : "ml-0 lg:ml-64"
+          } transition-all`}
+        >
           {/* Outlet for nested routes */}
-          <Outlet />
+          <Outlet context={{ sidebarOpen }} />
         </div>
       </div>
     </div>
