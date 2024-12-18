@@ -44,16 +44,16 @@ export default function Layout() {
         {/* Sidebar */}
         {!isHome && (
           <div
-            className={`fixed top-16 left-0 h-[calc(100vh-4rem)] w-64 bg-gray-800 text-white flex flex-col transform ${
+            className={`fixed top-16 left-0 h-[calc(100vh-4rem)] w-48 border-r text-gray-800 flex flex-col transform ${
               sidebarOpen ? "translate-x-0" : "-translate-x-64"
             } transition-transform lg:translate-x-0`}
           >
-            <nav className="flex-1 mt-4">
+            <nav className="flex-1 mt-14">
               <ul className="space-y-2">
                 <li>
                   <Link
                     to="/components"
-                    className="flex items-center px-4 py-2 text-sm hover:bg-gray-700 rounded-md transition"
+                    className="flex items-center px-4 py-2 text-sm hover:bg-gray-200 rounded-md transition"
                   >
                     Buttons
                   </Link>
