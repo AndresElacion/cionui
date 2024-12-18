@@ -1,14 +1,11 @@
 import { useOutletContext } from "react-router-dom";
-import ButtonDesign1 from "../components/button/ButtonDesign1";
-import ButtonDesign2 from "../components/button/ButtonDesign2";
-import ButtonDesign3 from "../components/button/ButtonDesign3";
-import ButtonDesign4 from "../components/button/ButtonDesign4";
+import CardDesign1 from "../components/card/CardDesign1";
 
 interface OutletContext {
   sidebarOpen: boolean;
 }
 
-export default function Components() {
+export default function Cards() {
   // Use the context from the Layout component
   const { sidebarOpen } = useOutletContext<OutletContext>();
 
@@ -23,20 +20,11 @@ export default function Components() {
           Components
         </a>
         <span>/</span>
-        <h1>Buttons</h1>
+        <h1>Cards</h1>
       </div>
 
       <div className="mb-12 px-4">
-        <ButtonDesign1 />
-      </div>
-      <div className="mb-12 px-4">
-        <ButtonDesign2 />
-      </div>
-      <div className="mb-12 px-4">
-        <ButtonDesign3 />
-      </div>
-      <div className="px-4">
-        <ButtonDesign4 />
+        <CardDesign1 />
       </div>
     </div>
   );

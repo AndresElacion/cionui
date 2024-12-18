@@ -52,10 +52,18 @@ export default function Layout() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    to="/components"
+                    to="/Buttons"
                     className="flex items-center px-4 py-2 text-sm hover:bg-gray-200 rounded-md transition"
                   >
                     Buttons
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/Cards"
+                    className="flex items-center px-4 py-2 text-sm hover:bg-gray-200 rounded-md transition"
+                  >
+                    Cards
                   </Link>
                 </li>
               </ul>
