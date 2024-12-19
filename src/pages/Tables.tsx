@@ -1,5 +1,6 @@
 import { useOutletContext } from "react-router-dom";
 import TableDesign1 from "../components/Table/TableDesign1";
+import TableDesign2 from "../components/Table/TableDesign2";
 
 interface OutletContext {
   sidebarOpen: boolean;
@@ -25,6 +26,9 @@ export default function Tables() {
 
       <div className="mb-12 px-4">
         <TableDesign1 />
+      </div>
+      <div className="mb-12 px-4">
+        <TableDesign2 />
       </div>
     </div>
   );
