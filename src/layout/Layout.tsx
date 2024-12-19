@@ -66,6 +66,14 @@ export default function Layout() {
                     Cards
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/Accordions"
+                    className="flex items-center px-4 py-2 text-sm hover:bg-gray-200 rounded-md transition"
+                  >
+                    Accordions
+                  </Link>
+                </li>
               </ul>
             </nav>
           </div>

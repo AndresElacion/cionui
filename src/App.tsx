@@ -5,6 +5,7 @@ import Welcome from "./pages/Welcome";
 import Buttons from "./pages/Buttons";
 import Layout from "./layout/Layout";
 import Cards from "./pages/Cards";
+import Accordions from "./pages/Accordions";
 
 const NotFound = () => (
   <h1 className="text-center mt-10">404 - Page Not Found</h1>
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route element={<Layout />}>
           <Route path="buttons" element={<Buttons />} />
           <Route path="cards" element={<Cards />} />
+          <Route path="accordions" element={<Accordions />} />
 
           {/* Catch-all 404 route */}
           <Route path="*" element={<NotFound />} />
