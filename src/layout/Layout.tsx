@@ -74,6 +74,14 @@ export default function Layout() {
                     Accordions
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/Tables"
+                    className="flex items-center px-4 py-2 text-sm hover:bg-gray-200 rounded-md transition"
+                  >
+                    Tables
+                  </Link>
+                </li>
               </ul>
             </nav>
           </div>
