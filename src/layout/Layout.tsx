@@ -82,6 +82,14 @@ export default function Layout() {
                     Tables
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/Forms"
+                    className="flex items-center px-4 py-2 text-sm hover:bg-gray-200 rounded-md transition"
+                  >
+                    Forms
+                  </Link>
+                </li>
               </ul>
             </nav>
           </div>

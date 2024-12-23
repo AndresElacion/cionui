@@ -7,6 +7,7 @@ import Layout from "./layout/Layout";
 import Cards from "./pages/Cards";
 import Accordions from "./pages/Accordions";
 import Tables from "./pages/Tables";
+import Forms from "./pages/Forms";
 
 const NotFound = () => (
   <h1 className="text-center mt-10">404 - Page Not Found</h1>
@@ -22,6 +23,7 @@ const App: React.FC = () => {
           <Route path="cards" element={<Cards />} />
           <Route path="accordions" element={<Accordions />} />
           <Route path="tables" element={<Tables />} />
+          <Route path="forms" element={<Forms />} />
 
           {/* Catch-all 404 route */}
           <Route path="*" element={<NotFound />} />
