@@ -46,7 +46,7 @@ export default function Layout() {
 			)}
 
 			{/* Floating Sidebar */}
-			<div className={`fixed lg:static bottom-0 left-0 h-2/5 w-full bg-white 
+			<div className={`fixed lg:static bottom-0 left-0 h-2/5 lg:h-screen lg:w-64 w-full bg-white border-r
 				shadow-lg z-50 transform ${
 				sidebarOpen ? "translate-x-0" : "-translate-x-full"
 			} transition-transform duration-300 ease-in-out lg:transform-none lg:shadow-none`}
@@ -56,7 +56,7 @@ export default function Layout() {
 						<li>
 							<Link
 							to="/components/Buttons"
-							className="flex items-center px-4 py-2 text-lg font-semibold hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start sm:justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Buttons
 							</Link>
@@ -64,7 +64,7 @@ export default function Layout() {
 						<li>
 							<Link
 							to="/components/Cards"
-							className="flex items-center px-4 py-2 text-lg font-semibold hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start sm:justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Cards
 							</Link>
@@ -72,7 +72,7 @@ export default function Layout() {
 						<li>
 							<Link
 							to="/components/Accordions"
-							className="flex items-center px-4 py-2 text-lg font-semibold hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start sm:justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Accordions
 							</Link>
@@ -80,7 +80,7 @@ export default function Layout() {
 						<li>
 							<Link
 							to="/components/Tables"
-							className="flex items-center px-4 py-2 text-lg font-semibold hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start sm:justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Tables
 							</Link>
@@ -88,7 +88,7 @@ export default function Layout() {
 						<li>
 							<Link
 							to="/components/Forms"
-							className="flex items-center px-4 py-2 text-lg font-semibold hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start sm:justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Forms
 							</Link>
