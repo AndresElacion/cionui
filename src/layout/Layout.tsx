@@ -51,12 +51,20 @@ export default function Layout() {
 				sidebarOpen ? "translate-x-0" : "-translate-x-full"
 			} transition-transform duration-300 ease-in-out lg:transform-none lg:shadow-none`}
 			>
-				<nav className="flex-1 mt-14">
+				<nav className="flex-1 mt-5">
 					<ul className="space-y-2">
 						<li>
 							<Link
+							to="/"
+							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
+							>
+							Home
+							</Link>
+						</li>
+						<li>
+							<Link
 							to="/components/Buttons"
-							className="flex lg:justify-start sm:justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Buttons
 							</Link>
@@ -64,7 +72,7 @@ export default function Layout() {
 						<li>
 							<Link
 							to="/components/Cards"
-							className="flex lg:justify-start sm:justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Cards
 							</Link>
@@ -72,7 +80,7 @@ export default function Layout() {
 						<li>
 							<Link
 							to="/components/Accordions"
-							className="flex lg:justify-start sm:justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Accordions
 							</Link>
@@ -80,7 +88,7 @@ export default function Layout() {
 						<li>
 							<Link
 							to="/components/Tables"
-							className="flex lg:justify-start sm:justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Tables
 							</Link>
@@ -88,7 +96,7 @@ export default function Layout() {
 						<li>
 							<Link
 							to="/components/Forms"
-							className="flex lg:justify-start sm:justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Forms
 							</Link>
