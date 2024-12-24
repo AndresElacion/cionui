@@ -1,6 +1,7 @@
 import { useOutletContext } from "react-router-dom";
 import FormDesign1 from "../components/form/FormDesign1";
 import FormDesign2 from "../components/form/FormDesign2";
+import FormDesign3 from "../components/form/FormDesign3";
 
 interface OutletContext {
   sidebarOpen: boolean;
@@ -29,6 +30,9 @@ export default function Forms() {
       </div>
       <div className="mb-12 px-4">
         <FormDesign2 />
+      </div>
+      <div className="mb-12 px-4">
+        <FormDesign3 />
       </div>
     </div>
   );
