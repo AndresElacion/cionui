@@ -64,7 +64,7 @@ export default function Layout() {
 						<li>
 							<Link
 							to="/components/Buttons"
-							className="flex justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Buttons
 							</Link>
@@ -72,7 +72,7 @@ export default function Layout() {
 						<li>
 							<Link
 							to="/components/Cards"
-							className="flex justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Cards
 							</Link>
@@ -80,7 +80,7 @@ export default function Layout() {
 						<li>
 							<Link
 							to="/components/Accordions"
-							className="flex justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Accordions
 							</Link>
@@ -88,7 +88,7 @@ export default function Layout() {
 						<li>
 							<Link
 							to="/components/Tables"
-							className="flex justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Tables
 							</Link>
@@ -96,7 +96,7 @@ export default function Layout() {
 						<li>
 							<Link
 							to="/components/Forms"
-							className="flex justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
+							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Forms
 							</Link>
