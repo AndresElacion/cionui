@@ -22,7 +22,7 @@ export default function WelcomeLayout() {
       </div>
 
       {/* Sidebar and Content */}
-      <div className="flex pt-16 justify-center">
+      <div className="flex items-center justify-center">
 
         {/* Main Content */}
         <div
