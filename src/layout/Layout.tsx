@@ -63,7 +63,7 @@ export default function Layout() {
 						</li>
 						<li>
 							<Link
-							to="/components/Buttons"
+							to="/Buttons"
 							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Buttons
@@ -71,7 +71,7 @@ export default function Layout() {
 						</li>
 						<li>
 							<Link
-							to="/components/Cards"
+							to="/Cards"
 							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Cards
@@ -79,7 +79,7 @@ export default function Layout() {
 						</li>
 						<li>
 							<Link
-							to="/components/Accordions"
+							to="/Accordions"
 							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Accordions
@@ -87,7 +87,7 @@ export default function Layout() {
 						</li>
 						<li>
 							<Link
-							to="/components/Tables"
+							to="/Tables"
 							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Tables
@@ -95,7 +95,7 @@ export default function Layout() {
 						</li>
 						<li>
 							<Link
-							to="/components/Forms"
+							to="/Forms"
 							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
 							>
 							Forms

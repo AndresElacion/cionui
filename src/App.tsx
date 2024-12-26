@@ -9,6 +9,7 @@ import Accordions from "./pages/Accordions";
 import Tables from "./pages/Tables";
 import Forms from "./pages/Forms";
 import WelcomeLayout from "./layout/WelcomeLayout";
+import Components from "./pages/Components";
 
 const NotFound = () => (
   <h1 className="text-center mt-10">404 - Page Not Found</h1>
@@ -21,13 +22,12 @@ const App: React.FC = () => {
       <Routes>
         
         <Route element={<Layout />}>
-          <Route path="components"> 
-            <Route path="buttons" element={<Buttons />} />
-            <Route path="cards" element={<Cards />} />
-            <Route path="accordions" element={<Accordions />} />
-            <Route path="tables" element={<Tables />} />
-            <Route path="forms" element={<Forms />} />
-          </Route>
+          <Route path="components" element={<Components />} />
+          <Route path="buttons" element={<Buttons />} />
+          <Route path="cards" element={<Cards />} />
+          <Route path="accordions" element={<Accordions />} />
+          <Route path="tables" element={<Tables />} />
+          <Route path="forms" element={<Forms />} />
         </Route>
 
         <Route element={<WelcomeLayout />}>
