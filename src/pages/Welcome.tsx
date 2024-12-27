@@ -2,26 +2,31 @@ export default function Welcome() {
     return (
         <div className="max-h-screen">
             {/* Hero Section */}
-            <div className="relative overflow-hidden">
-                <div className="">
-                    <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-24">
-                        <main className="mt-10 px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-24">
-                        <div className="sm:text-center lg:text-left">
-                            <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                            <span className="block">Built for React & Tailwind</span>
-                            </h1>
-                            <p className="mt-3 text-base sm:mt-5 sm:text-lg text-gray-500 sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                            Effortlessly customizable, fully accessible UI components. Copy, paste, and create stunning designs in seconds.
-                            </p>
-                            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                            <div className="rounded-md shadow">
-                                <a href="/components" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                                Get started
-                                </a>
-                            </div>
-                            </div>
+            <div className="mt-24 flex items-center justify-center bg-gray-50 py-16">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center">
+                    <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                        <span className="block">Built for React & Tailwind</span>
+                        <span className="block text-indigo-600">Modern UI Components</span>
+                    </h1>
+                    
+                    <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl">
+                        Effortlessly customizable, fully accessible UI components. 
+                        Copy, paste, and create stunning designs in seconds.
+                    </p>
+                    
+                    <div className="mt-5 sm:mt-8 sm:flex sm:justify-center">
+                        <div className="rounded-md shadow">
+                        <a
+                            href="/components"
+                            className="w-full flex items-center justify-center px-8 py-3 border 
+                                    border-transparent text-base font-medium rounded-md text-white 
+                                    bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                        >
+                            Get started
+                        </a>
                         </div>
-                        </main>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -82,8 +87,8 @@ export default function Welcome() {
             </div>
 
             {/* Footer */}
-            <footer className="">
-                <div className=" py-20 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+            <footer>
+                <div className="pt-20 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
                     <div className="flex justify-center space-x-6 md:order-2">
                         <a href="https://github.com" className="text-gray-400 hover:text-gray-500">
                             <span className="sr-only">GitHub</span>
