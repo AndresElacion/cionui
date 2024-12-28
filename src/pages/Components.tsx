@@ -55,14 +55,14 @@ export default function Components() {
                 {['Buttons', 'Forms', 'Cards', 'Accordions', 'Tables'].map((category) => (
                     <a
                         key={category}
-                        href={`/${category.toLowerCase()}`}
+                        href={`/${category}`}
                         className="p-6 border rounded-lg hover:border-indigo-500 transition-colors group"
                     >
                         <h3 className="font-semibold text-lg mb-2 group-hover:text-indigo-600">
                             {category}
                         </h3>
                         <p className="text-gray-600">
-                            Browse our collection of {category.toLowerCase()}
+                            Browse our collection of {category}
                         </p>
                     </a>
                 ))}
