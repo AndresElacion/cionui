@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Welcome() {
     return (
         <div className="max-h-screen">
@@ -17,14 +19,14 @@ export default function Welcome() {
                     
                     <div className="mt-5 sm:mt-8 sm:flex sm:justify-center">
                         <div className="rounded-md shadow">
-                        <a
-                            href="/components"
+                        <Link
+                            to="/Components"
                             className="w-full flex items-center justify-center px-8 py-3 border 
                                     border-transparent text-base font-medium rounded-md text-white 
                                     bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                         >
                             Get started
-                        </a>
+                        </Link>
                         </div>
                     </div>
                     </div>
