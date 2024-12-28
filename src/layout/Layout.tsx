@@ -17,11 +17,8 @@ export default function Layout() {
 				<Link to="/" className="hover:text-blue-600">
 				Home
 				</Link>
-				<Link to="/components" className="hover:text-blue-600">
+				<Link to="/Components" className="hover:text-blue-600">
 				Components
-				</Link>
-				<Link to="/contact" className="hover:text-blue-600">
-				Contact
 				</Link>
 			</nav>
 
