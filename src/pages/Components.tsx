@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Components() {
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
@@ -53,9 +55,9 @@ export default function Components() {
             {/* Component Categories */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {['Buttons', 'Forms', 'Cards', 'Accordions', 'Tables'].map((category) => (
-                    <a
+                    <Link
                         key={category}
-                        href={`/${category}`}
+                        to={`/${category}`}
                         className="p-6 border rounded-lg hover:border-indigo-500 transition-colors group"
                     >
                         <h3 className="font-semibold text-lg mb-2 group-hover:text-indigo-600">
@@ -64,7 +66,7 @@ export default function Components() {
                         <p className="text-gray-600">
                             Browse our collection of {category}
                         </p>
-                    </a>
+                    </Link>
                 ))}
             </div>
         </div>
