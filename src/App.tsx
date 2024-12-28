@@ -22,12 +22,12 @@ const App: React.FC = () => {
       <Routes>
         
         <Route element={<Layout />}>
-          <Route path="components" element={<Components />} />
-          <Route path="buttons" element={<Buttons />} />
-          <Route path="cards" element={<Cards />} />
-          <Route path="accordions" element={<Accordions />} />
-          <Route path="tables" element={<Tables />} />
-          <Route path="forms" element={<Forms />} />
+          <Route path="Components" element={<Components />} />
+          <Route path="Buttons" element={<Buttons />} />
+          <Route path="Cards" element={<Cards />} />
+          <Route path="Accordions" element={<Accordions />} />
+          <Route path="Tables" element={<Tables />} />
+          <Route path="Forms" element={<Forms />} />
         </Route>
 
         <Route element={<WelcomeLayout />}>
