@@ -10,6 +10,7 @@ import Tables from "./pages/Tables";
 import Forms from "./pages/Forms";
 import WelcomeLayout from "./layout/WelcomeLayout";
 import Components from "./pages/Components";
+import Hero from "./pages/Hero";
 
 const NotFound = () => (
   <h1 className="text-center mt-10">404 - Page Not Found</h1>
@@ -28,6 +29,7 @@ const App: React.FC = () => {
           <Route path="Accordions" element={<Accordions />} />
           <Route path="Tables" element={<Tables />} />
           <Route path="Forms" element={<Forms />} />
+          <Route path="Hero" element={<Hero />} />
         </Route>
 
         <Route element={<WelcomeLayout />}>
