@@ -1,5 +1,6 @@
 import { useOutletContext } from "react-router-dom";
 import HeroDesign1 from "../components/hero/HeroDesign1";
+import HeroDesign2 from "../components/hero/HeroDesign2";
 
 interface OutletContext {
   sidebarOpen: boolean;
@@ -25,6 +26,9 @@ export default function Hero() {
 
       <div className="mb-12 px-4">
         <HeroDesign1 />
+      </div>
+      <div className="mb-12 px-4">
+        <HeroDesign2 />
       </div>
     </div>
   );
