@@ -15,6 +15,7 @@ export default function WelcomeLayout() {
 							Components
 						</Link>
 						
+						{/* DarkMode */}
 						<ThemeToggle />
 					</nav>
 				</div>
