@@ -106,6 +106,14 @@ export default function Layout() {
 							Hero
 							</Link>
 						</li>
+						<li>
+							<Link
+							to="/Cta"
+							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
+							>
+							CTA
+							</Link>
+						</li>
 					</ul>
 				</nav>
 			</div>

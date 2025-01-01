@@ -54,7 +54,7 @@ export default function Components() {
 
             {/* Component Categories */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {['Buttons', 'Forms', 'Cards', 'Accordions', 'Tables', 'Hero'].map((category) => (
+                {['Buttons', 'Forms', 'Cards', 'Accordions', 'Tables', 'Hero', 'Cta'].map((category) => (
                     <Link
                         key={category}
                         to={`/${category}`}
