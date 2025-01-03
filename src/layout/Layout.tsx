@@ -1,5 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
+import ThemeToggle from "../components/ThemeToggle";
 
 export default function Layout() {
   // Determine whether to show the sidebar
@@ -20,6 +21,9 @@ export default function Layout() {
 				<Link to="/Components" className="hover:text-blue-600">
 					Components
 				</Link>
+										
+				{/* DarkMode */}
+				<ThemeToggle />
 			</nav>
 
 			{/* Toggle Button for Mobile */}
@@ -34,7 +38,7 @@ export default function Layout() {
 		</div>
 
 		{/* Sidebar and Content */}
-		<div className="flex pt-16">
+		<div className="flex pt-14">
 			{/* Overlay */}
 			{sidebarOpen && (
 			<div 
@@ -43,13 +47,13 @@ export default function Layout() {
 			)}
 
 			{/* Floating Sidebar */}
-			<div className={`fixed lg:static bottom-0 left-0 h-2/5 lg:h-screen lg:w-64 w-full bg-white border-r
+			<div className={`fixed bottom-0 left-0 h-2/5 lg:h-screen pt-12 lg:w-64 w-full dark:bg-gray-900 bg-gray-100 border-r
 				shadow-lg transform ${
 				sidebarOpen ? "translate-x-0 z-50" : "-translate-x-full"
 			} transition-transform duration-300 ease-in-out lg:transform-none lg:shadow-none`}
 			>
 				<nav className="flex-1 mt-5">
-					<ul className="space-y-2">
+					<ul className="space-y-2 dark:text-gray-100">
 						<li className="lg:hidden">
 							<Link
 							to="/"
@@ -119,7 +123,7 @@ export default function Layout() {
 			</div>
 
 			{/* Main Content */}
-			<div className="flex-grow p-4">
+			<div className="flex-grow p-4 dark:bg-gray-900 bg-gray-100">
 				<Outlet context={{ sidebarOpen }} />
 			</div>
 		</div>
