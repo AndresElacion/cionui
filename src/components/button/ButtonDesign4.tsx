@@ -7,7 +7,8 @@ const ButtonDesign4: React.FC = () => {
 
   const buttonCode = `
         <button className="px-4 py-1 text-nowrap font-semibold border
-            text-gray-800 rounded-md hover:bg-gray-200 transition-colors">
+          text-gray-800 dark:text-gray-100 rounded-md hover:dark:text-gray-800
+          hover:bg-gray-200 transition-colors">
             Button
         </button>
     `;
@@ -23,7 +24,7 @@ const ButtonDesign4: React.FC = () => {
 
   return (
     <div className="max-w-3xl mx-auto flex flex-col justify-center items-center space-y-3 space-x-4 mt-4">
-      <button className="px-4 py-1 text-nowrap font-semibold border text-gray-800 rounded-md hover:bg-gray-200 transition-colors">
+      <button className="px-4 py-1 text-nowrap font-semibold border text-gray-800 dark:text-gray-100 rounded-md hover:dark:text-gray-800 hover:bg-gray-200 transition-colors">
         Button
       </button>
       <div className="w-full max-w-5xl p-4 border rounded-md relative">
