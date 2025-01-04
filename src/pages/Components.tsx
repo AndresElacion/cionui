@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
+import SEO from '../components/SEO';
 
 export default function Components() {
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+            <SEO 
+                title="Components | CIONUI" 
+                description="A collection of pre-built React components using Tailwind CSS. Copy, paste, and customize." 
+                keywords="react, laravel, tailwindcss, design system, components"
+            />
             {/* Introduction Section */}
             <div className="text-center mb-16">
                 <h1 className="text-4xl font-bold text-gray-900 mb-4">
