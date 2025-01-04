@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
 import FeedbackForm from "../components/FeedbackForm";
+import React from 'react';
+import SEO from '../components/SEO';
 
-export default function Welcome() {
+const Welcome: React.FC = () => {
     return (
         <div>
+            <SEO 
+                title="Welcome to CION UI" 
+                description="CION is a design system for building modern UIs. It provides a collection of reusable components that can be easily customized to create stunning designs." 
+                keywords="react, laravel, tailwindcss, design system, components"
+            />
             <div className="">
                 {/* Hero Section */}
                 <div className="flex items-center justify-center h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -115,3 +122,5 @@ export default function Welcome() {
         </div>
     );
 }
+
+export default Welcome;
