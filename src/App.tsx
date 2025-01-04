@@ -12,6 +12,8 @@ import WelcomeLayout from "./layout/WelcomeLayout";
 import Components from "./pages/Components";
 import Hero from "./pages/Hero";
 import CTA from "./pages/CTA";
+import FeedbackData from "./pages/FeedbackData";
+import FeedbackLayout from "./layout/FeedbackLayout";
 
 const NotFound = () => (
   <h1 className="text-center mt-10">404 - Page Not Found</h1>
@@ -32,6 +34,10 @@ const App: React.FC = () => {
           <Route path="Forms" element={<Forms />} />
           <Route path="Hero" element={<Hero />} />
           <Route path="Cta" element={<CTA />} />
+        </Route>
+        
+        <Route element={<FeedbackLayout />}>
+          <Route path="FeedbackData" element={<FeedbackData />} />
         </Route>
 
         <Route element={<WelcomeLayout />}>
