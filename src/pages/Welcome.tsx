@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import FeedbackForm from "../components/FeedbackForm";
 
 export default function Welcome() {
     return (
@@ -88,6 +89,9 @@ export default function Welcome() {
                         </div>
                     </div>
                 </div>
+
+                {/* Feedback */}
+                <FeedbackForm />
 
                 {/* Footer */}
                 <footer>
