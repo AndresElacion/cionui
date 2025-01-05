@@ -6,7 +6,7 @@ const CardDesign1: React.FC = () => {
   const [copied, setCopied] = useState(false);
 
   const buttonCode = `
-    <div className="max-w-sm mx-auto bg-white rounded-lg shadow-md
+    <div className="max-w-sm mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md
         overflow-hidden">
         {/* Card Image */}
         <img
@@ -17,15 +17,14 @@ const CardDesign1: React.FC = () => {
 
         {/* Card Content */}
         <div className="p-4">
-            <h2 className="text-lg font-semibold text-gray-800">Card Title</h2>
+            <h2 className="text-lg font-semibold dark:text-gray-100  text-gray-800">Card Title</h2>
             <p className="text-gray-600 my-2">
                 This is a brief description of the card content. Tailwind CSS makes
                 styling easy and consistent.
             </p>
 
             {/* Card Button */}
-            <button className="px-4 py-1 text-nowrap font-semibold bg-gray-800
-                text-white rounded-md hover:bg-gray-900 transition-colors">
+            <button className="px-4 py-1 text-nowrap font-semibold bg-gray-900 text-white rounded-md hover:bg-gray-950 transition-colors">
                 Primary
             </button>
         </div>
@@ -43,7 +42,7 @@ const CardDesign1: React.FC = () => {
 
   return (
     <div className="max-w-3xl mx-auto flex flex-col justify-center items-center space-y-3 space-x-4 mt-4">
-      <div className="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+      <div className="max-w-sm mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
         {/* Card Image */}
         <img
           className="w-full h-48 object-cover"
@@ -53,14 +52,14 @@ const CardDesign1: React.FC = () => {
 
         {/* Card Content */}
         <div className="p-4">
-          <h2 className="text-lg font-semibold text-gray-800">Card Title</h2>
+          <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100">Card Title</h2>
           <p className="text-gray-600 my-2">
             This is a brief description of the card content. Tailwind CSS makes
             styling easy and consistent.
           </p>
 
           {/* Card Button */}
-          <button className="px-4 py-1 text-nowrap font-semibold bg-gray-800 text-white rounded-md hover:bg-gray-900 transition-colors">
+          <button className="px-4 py-1 text-nowrap font-semibold bg-gray-900 text-white rounded-md hover:bg-gray-950 transition-colors">
             Primary
           </button>
         </div>

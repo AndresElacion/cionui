@@ -51,36 +51,18 @@ const HeroDesign2: React.FC = () => {
 
   return (
     <div className="flex flex-col justify-center items-center space-y-3 space-x-4 mt-4">
-        <div className="w-full relative bg-gradient-to-r from-blue-500 to-blue-400 text-white h-screen flex flex-col justify-center items-center">
-            <div className="text-center">
-                <h1 className="text-5xl md:text-6xl font-bold mb-4">Welcome to Our Platform</h1>
-                <p className="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
-                Discover amazing features and transform your experience with our cutting-edge technology.
-                </p>
-                <button className="px-6 py-3 text-white bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700 transform hover:scale-105 transition duration-300 text-base font-semibold">
-                Get Started
-                </button>
-            </div>
-            {/* Moving Wave */}
-            <div className="absolute bottom-0 w-full overflow-hidden leading-none">
-                <svg
-                className="relative block w-full h-40"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1200 120"
-                preserveAspectRatio="none"
-                >
-                <path
-                    d="M0,96L120,85.3C240,75,480,53,720,53.3C960,53,1200,75,1320,85.3L1440,96V120H1320C1200,120,960,120,720,120C480,120,240,120,120,120H0V96Z"
-                    fill="#ffffff"
-                    fillOpacity="0.6"
-                ></path>
-                <path
-                    d="M0,60L120,70C240,80,480,100,720,93.3C960,87,1200,53,1320,37.3L1440,20V120H1320C1200,120,960,120,720,120C480,120,240,120,120,120H0V60Z"
-                    fill="#ffffff"
-                    fillOpacity="0.3"
-                ></path>
-                </svg>
-            </div>
+        <div className="max-w-7xl bg-gradient-to-r from-blue-500 to-blue-400 text-white">
+			<div className="container mx-auto flex items-center justify-center p-24">
+				<div className="text-center">
+					<h1 className="text-5xl md:text-6xl font-bold mb-4">Welcome to Our 		Platform</h1>
+					<p className="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
+						Discover amazing features and transform your experience with our cutting-edge technology.
+					</p>
+					<button className="px-6 py-3 text-white bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700 transform hover:scale-105 transition duration-300 text-base font-semibold">
+						Get Started
+					</button>
+            	</div>
+			</div>
         </div>
       <div className="w-full max-w-5xl p-4 border rounded-md relative">
         {/* Copy Button */}
