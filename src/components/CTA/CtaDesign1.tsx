@@ -31,15 +31,17 @@ const CtaDesign1: React.FC = () => {
 
   return (
     <div className="flex flex-col justify-center items-center space-y-3 space-x-4 mt-4">
-        <div className="w-full h-1/3 p-5 bg-blue-500 text-white flex flex-col justify-center items-center">
-            <div className="text-center">
-                <h1 className="text-5xl md:text-6xl font-bold mb-4">Ready to start?</h1>
-                <p className="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
-                    Maximize your potential with our cutting-edge technology.
-                </p>
-                <button className="px-6 py-3 text-white bg-gray-900 rounded-lg shadow-lg hover:bg-gray-950 transform hover:scale-105 transition duration-300 text-base font-semibold">
-                    Get Started
-                </button>
+        <div className="max-w-7xl h-1/3 p-5 bg-blue-500 text-white flex flex-col justify-center items-center">
+            <div className="container mx-auto flex items-center justify-center p-24">
+                <div className="text-center">
+                    <h1 className="text-5xl md:text-6xl font-bold mb-4">Ready to start?</h1>
+                    <p className="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
+                        Maximize your potential with our cutting-edge technology.
+                    </p>
+                    <button className="px-6 py-3 text-white bg-gray-900 rounded-lg shadow-lg hover:bg-gray-950 transform hover:scale-105 transition duration-300 text-base font-semibold">
+                        Get Started
+                    </button>
+                </div>
             </div>
         </div>
       <div className="w-full max-w-5xl p-4 border rounded-md relative">
