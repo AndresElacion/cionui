@@ -123,7 +123,7 @@ export default function Layout() {
 			</div>
 
 			{/* Main Content */}
-			<div className="flex-grow p-4 dark:bg-gray-900 bg-gray-100">
+			<div className="flex-grow p-4 dark:bg-gray-900 bg-gray-100 min-h-screen">
 				<Outlet context={{ sidebarOpen }} />
 			</div>
 		</div>
