@@ -118,6 +118,14 @@ export default function Layout() {
 							CTA
 							</Link>
 						</li>
+						<li>
+							<Link
+							to="/Nav"
+							className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-200 rounded-md transition"
+							>
+							Nav
+							</Link>
+						</li>
 					</ul>
 				</nav>
 			</div>
