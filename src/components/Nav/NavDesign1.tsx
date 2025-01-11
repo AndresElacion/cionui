@@ -8,10 +8,10 @@ const NavDesign1: React.FC = () => {
   const [copied, setCopied] = useState(false);
 
   const buttonCode = `
-    <div className="fixed top-0 left-0 w-full bg-white shadow-md z-10">
+    <div className="w-full bg-white dark:bg-gray-800 shadow-md ml-4">
         <div className="flex max-w-7xl mx-auto items-center justify-between p-4">
-            <Link to="#" className="text-lg font-bold">Logo</Link>
-            <nav className="space-x-3 hidden lg:flex">
+            <Link to="#" className="text-lg font-bold dark:text-gray-100">Logo</Link>
+            <nav className="space-x-3 hidden lg:flex dark:text-gray-100">
                 <Link to="#" className="hover:text-blue-600">
                     Home
                 </Link>
