@@ -37,10 +37,10 @@ const NavDesign1: React.FC = () => {
 
   return (
     <div className="max-w-3xl mx-auto flex flex-col justify-center items-center space-y-3 space-x-4 mt-4">
-        <div className="w-full bg-white shadow-md ml-4">
+        <div className="w-full bg-white dark:bg-gray-800 shadow-md ml-4">
 			<div className="flex max-w-7xl mx-auto items-center justify-between p-4">
-                <Link to="#" className="text-lg font-bold">Logo</Link>
-                <nav className="space-x-3 hidden lg:flex">
+                <Link to="#" className="text-lg font-bold dark:text-gray-100">Logo</Link>
+                <nav className="space-x-3 hidden lg:flex dark:text-gray-100">
                     <Link to="#" className="hover:text-blue-600">
                         Home
                     </Link>
