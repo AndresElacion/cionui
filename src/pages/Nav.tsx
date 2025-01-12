@@ -1,5 +1,6 @@
 import { useOutletContext } from "react-router-dom";
 import NavDesign1 from "../components/Nav/NavDesign1";
+import NavDesign2 from "../components/Nav/NavDesign2";
 
 interface OutletContext {
   sidebarOpen: boolean;
@@ -25,6 +26,9 @@ export default function Nav() {
 
       <div className="mb-12 px-4">
         <NavDesign1 />
+      </div>
+      <div className="mb-12 px-4">
+        <NavDesign2 />
       </div>
     </div>
   );
