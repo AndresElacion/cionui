@@ -20,7 +20,7 @@ export default function CTA() {
           Components
         </a>
         <span>/</span>
-        <h1>Tables</h1>
+        <h1>CTA</h1>
       </div>
 
       <div className="mb-12 px-4">
