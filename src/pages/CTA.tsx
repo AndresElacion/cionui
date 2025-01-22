@@ -1,5 +1,6 @@
 import { useOutletContext } from "react-router-dom";
 import CtaDesign1 from "../components/CTA/CtaDesign1";
+import CtaDesign2 from "../components/CTA/CtaDesign2";
 
 interface OutletContext {
   sidebarOpen: boolean;
@@ -25,6 +26,9 @@ export default function CTA() {
 
       <div className="mb-12 px-4">
         <CtaDesign1 />
+      </div>
+      <div className="mb-12 px-4">
+        <CtaDesign2 />
       </div>
     </div>
   );
