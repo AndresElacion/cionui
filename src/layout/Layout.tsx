@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import { useState } from "react";
 import ThemeToggle from "../components/ThemeToggle";
 
@@ -59,76 +59,85 @@ export default function Layout() {
           <nav className="flex-1 mt-5">
             <ul className="space-y-2 dark:text-gray-100">
               <li className="lg:hidden">
-                <Link
+                <NavLink
                   to="/"
-                  className="flex justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition"
+                  className={({ isActive }) => 
+                  `flex justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition ${isActive ? 'bg-gray-800 text-white' : ''}`}
                 >
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/Buttons"
-                  className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition"
+                  className={({ isActive }) => 
+                  `flex justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition ${isActive ? 'bg-gray-800 text-white' : ''}`}
                 >
                   Buttons
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/Cards"
-                  className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition"
+                  className={({ isActive }) => 
+                  `flex justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition ${isActive ? 'bg-gray-800 text-white' : ''}`}
                 >
                   Cards
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/Accordions"
-                  className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition"
+                  className={({ isActive }) => 
+                  `flex justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition ${isActive ? 'bg-gray-800 text-white' : ''}`}
                 >
                   Accordions
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/Tables"
-                  className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition"
+                  className={({ isActive }) => 
+                  `flex justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition ${isActive ? 'bg-gray-800 text-white' : ''}`}
                 >
                   Tables
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/Forms"
-                  className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition"
+                  className={({ isActive }) => 
+                  `flex justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition ${isActive ? 'bg-gray-800 text-white' : ''}`}
                 >
                   Forms
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/Hero"
-                  className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition"
+                  className={({ isActive }) => 
+                  `flex justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition ${isActive ? 'bg-gray-800 text-white' : ''}`}
                 >
                   Hero
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/Cta"
-                  className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition"
+                  className={({ isActive }) => 
+                  `flex justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition ${isActive ? 'bg-gray-800 text-white' : ''}`}
                 >
                   CTA
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/Nav"
-                  className="flex lg:justify-start justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition"
+                  className={({ isActive }) => 
+                  `flex justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition ${isActive ? 'bg-gray-800 text-white' : ''}`}
                 >
                   Nav
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </nav>
