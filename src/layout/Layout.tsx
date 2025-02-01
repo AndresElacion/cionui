@@ -139,6 +139,15 @@ export default function Layout() {
                   Nav
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to="/ReactLaravel"
+                  className={({ isActive }) => 
+                  `flex justify-center px-4 py-2 text-md hover:bg-gray-800 rounded-md transition ${isActive ? 'bg-gray-800 text-white' : ''}`}
+                >
+                  Axios Components
+                </NavLink>
+              </li>
             </ul>
           </nav>
         </div>
